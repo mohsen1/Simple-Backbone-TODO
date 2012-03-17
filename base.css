@@ -1,0 +1,16 @@
+body{font-family: arial, sans-serif; max-width:480px; min-width:320px; margin: 10px auto;}
+nav{font-size:12px; text-align:left; margin:5px 0; overflow:hidden;}
+	nav a{text-decoration:none; color:gray; margin:0 10px;border-radius:10px;  padding:0 10px;}
+	nav a:hover{background:#eee;}
+	nav a.active{background:#333; color:white;}
+	nav input[type="search"]{float:right; margin-right:3px;}
+section{font-size:13px; border-bottom:1px solid #eee;}
+	section .todo{padding:5px 0;}
+		section .todo:nth-child(odd){background:#eee;}
+		.delete-link{color:#900; float:right; text-decoration:none; margin:0 5px 0 0;}
+		section .todo input[type="text"]
+		{background:transparent; border:none; width:86%;}
+.important{text-decoration:none; font-weight:bold; color:#300; font-size:15px; border:1px solid #bbb; padding:0 3px; border-radius:2px; color:#bbb;}
+	.important.active{background:orange; color:#fff; border-color:orange;}
+.new{padding-left:20px;}
+	.new input{width: 96%; border:1px solid #eee; border-radius:2px; padding:3px; margin:5px 0;}
