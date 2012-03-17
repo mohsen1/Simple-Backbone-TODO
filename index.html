@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO</title>
+	<link rel="stylesheet" type="text/css" href="base.css" />
+</head>
+<body>
+	<section id="wrapper">
+		<nav id="nav">
+			<a href="#" id="all" class="active">All</a>
+			<a href="#" id="done">Done</a>
+			<a href="#" id="undone">Remaining</a>
+			<a href="#" id="important">Important</a>
+			<input type="search" placeholder="Search" id="search"/>
+		</nav>
+		<form class="new" action="#">
+			<input id="new" placeholder="Add new todo">
+		</form>
+		<div id="todos"></div>
+	</section>
+		<script type="text/template" id="todo-template">
+			<input type="checkbox" <% print(done? 'checked' : null) %>/>
+			<input type="text" value="<%=text%>" />
+			<a href="#" class="important <% print(important? 'active': null)%>">!</a>
+			<a href="#" class="delete-link">&#10008;</a>
+		</script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/Underscore.js"></script>
+		<script src="js/Backbone-min.js"></script>
+		<script src="app.js"></script>
+</body>
+</html>
